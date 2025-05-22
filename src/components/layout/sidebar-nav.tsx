@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -45,8 +46,10 @@ export function SidebarNav({ className, ...props }: SidebarNavProps) {
                   tooltip={item.title}
                 >
                   <Link href={item.href}>
-                    <Icon />
-                    <span>{item.title}</span>
+                    <span className="flex items-center gap-2"> {/* Wrapper span */}
+                      <Icon />
+                      <span>{item.title}</span>
+                    </span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
