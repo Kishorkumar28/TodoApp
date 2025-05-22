@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LucideIcon, type LucideProps } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import * as Icons from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -48,7 +48,7 @@ export function SidebarNav({ className, ...props }: SidebarNavProps) {
                   <Link href={item.href}>
                     <span className="flex items-center gap-2"> {/* Wrapper span */}
                       <Icon />
-                      <span>{item.title}</span>
+                      <span className="group-data-[collapsible=icon]:hidden">{item.title}</span>
                     </span>
                   </Link>
                 </SidebarMenuButton>
