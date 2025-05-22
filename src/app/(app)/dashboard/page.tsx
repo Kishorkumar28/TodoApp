@@ -68,9 +68,11 @@ export default function DashboardPage() {
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <h1 className="text-3xl font-bold text-primary">Developer Dashboard</h1>
         <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground w-full md:w-auto">
-            <Link href="/tasks"> 
-                View All Tasks
-                <ListChecks className="ml-2 h-5 w-5" />
+            <Link href="/tasks">
+                <span className="flex items-center">
+                    View All Tasks
+                    <ListChecks className="ml-2 h-5 w-5" />
+                </span>
             </Link>
         </Button>
       </div>

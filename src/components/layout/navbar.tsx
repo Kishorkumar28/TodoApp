@@ -64,8 +64,10 @@ export function Navbar() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link href="/profile">
-                    <UserCircle className="mr-2 h-4 w-4" />
-                    <span>Profile</span>
+                    <span className="flex items-center w-full">
+                      <UserCircle className="mr-2 h-4 w-4" />
+                      <span>Profile</span>
+                    </span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
@@ -75,8 +77,10 @@ export function Navbar() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link href="/auth/login">
-                    <LogOut className="mr-2 h-4 w-4" />
-                    <span>Log out</span>
+                    <span className="flex items-center w-full">
+                      <LogOut className="mr-2 h-4 w-4" />
+                      <span>Log out</span>
+                    </span>
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
