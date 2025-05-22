@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { CalendarDays, CheckCircle, Lightbulb } from "lucide-react"; // Updated icons
@@ -12,7 +13,7 @@ export default function ProfilePage() {
     joinDate: "January 1, 2024",
     tasksCompleted: 42, // Changed from questsCompleted
     favoriteCategory: "Feature Development", // Changed from Exploration
-    avatarUrl: "https://placehold.co/100x100.png" 
+    avatarUrl: "https://placehold.co/100x100.png"
   };
 
   return (
@@ -36,7 +37,9 @@ export default function ProfilePage() {
           </div>
           <div className="text-center mt-8">
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="/tasks">View My Tasks</Link> {/* Updated text and link */}
+                <Link href="/tasks">
+                  <span>View My Tasks</span>
+                </Link>
             </Button>
           </div>
            <p className="text-xs text-center text-muted-foreground pt-4">
