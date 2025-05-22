@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo } from 'react';
@@ -7,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { useLocalStorageQuests } from '@/hooks/use-local-storage-quests';
 import type { Quest } from '@/types/quest';
-import { PlusCircle, ListFilter, CheckSquare, Square, Loader2 } from 'lucide-react';
+import { PlusCircle, ListFilter, CheckSquare, Square, Loader2, ListChecks } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Input } from '@/components/ui/input';
