@@ -1,17 +1,17 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { UserCircle, Shield, Zap } from "lucide-react";
+import { CalendarDays, CheckCircle, Lightbulb } from "lucide-react"; // Updated icons
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function ProfilePage() {
   // Mock user data
   const user = {
-    name: "Player One",
-    email: "player.one@example.com",
+    name: "Developer One", // Changed from Player One
+    email: "dev.one@example.com",
     joinDate: "January 1, 2024",
-    questsCompleted: 42,
-    favoriteCategory: "Exploration",
+    tasksCompleted: 42, // Changed from questsCompleted
+    favoriteCategory: "Feature Development", // Changed from Exploration
     avatarUrl: "https://placehold.co/100x100.png" 
   };
 
@@ -20,7 +20,7 @@ export default function ProfilePage() {
       <Card className="max-w-2xl mx-auto shadow-xl">
         <CardHeader className="text-center">
           <Avatar className="w-24 h-24 mx-auto mb-4 border-4 border-primary shadow-lg">
-            <AvatarImage src={user.avatarUrl} alt={user.name} data-ai-hint="warrior avatar" />
+            <AvatarImage src={user.avatarUrl} alt={user.name} data-ai-hint="developer avatar" /> {/* Updated data-ai-hint */}
             <AvatarFallback className="text-3xl">
               {user.name.split(" ").map(n => n[0]).join("")}
             </AvatarFallback>
@@ -30,13 +30,13 @@ export default function ProfilePage() {
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-            <InfoItem icon={<UserCircle className="text-accent" />} label="Joined Guild" value={user.joinDate} />
-            <InfoItem icon={<Shield className="text-accent" />} label="Quests Completed" value={user.questsCompleted.toString()} />
-            <InfoItem icon={<Zap className="text-accent" />} label="Preferred Quest Type" value={user.favoriteCategory} />
+            <InfoItem icon={<CalendarDays className="text-accent" />} label="Joined Team" value={user.joinDate} /> {/* Updated label and icon */}
+            <InfoItem icon={<CheckCircle className="text-accent" />} label="Tasks Completed" value={user.tasksCompleted.toString()} /> {/* Updated label and icon */}
+            <InfoItem icon={<Lightbulb className="text-accent" />} label="Preferred Task Type" value={user.favoriteCategory} /> {/* Updated label and icon */}
           </div>
           <div className="text-center mt-8">
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="/quests">View My Quests</Link>
+                <Link href="/tasks">View My Tasks</Link> {/* Updated text and link */}
             </Button>
           </div>
            <p className="text-xs text-center text-muted-foreground pt-4">

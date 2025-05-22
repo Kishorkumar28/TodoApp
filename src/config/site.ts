@@ -1,16 +1,16 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "QuestLog",
-  description: "Embark on epic quests to conquer your to-do list!",
+  name: "DevTrack",
+  description: "Efficiently manage your software development tasks and projects.",
   mainNav: [
     {
       title: "Home",
       href: "/",
     },
     {
-      title: "Quests",
-      href: "/quests",
+      title: "Tasks",
+      href: "/tasks",
     },
   ],
   sidebarNav: [
@@ -20,9 +20,9 @@ export const siteConfig = {
       icon: "LayoutDashboard",
     },
     {
-      title: "Quests",
-      href: "/quests",
-      icon: "ListChecks",
+      title: "Tasks",
+      href: "/tasks",
+      icon: "ClipboardList", // Changed from ListChecks for better task representation
     },
     {
       title: "Profile",

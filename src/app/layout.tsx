@@ -6,8 +6,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'QuestLog - Gamify Your Tasks',
-  description: 'Embark on epic quests to conquer your to-do list!',
+  title: 'DevTrack - Streamline Your Development',
+  description: 'Efficiently manage your software development tasks and projects.',
 };
 
 export default function RootLayout({

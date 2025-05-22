@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ShieldCheck, Zap, Brain, ListChecks } from "lucide-react";
+import { AppWindow, Sparkles, Database, ClipboardList } from "lucide-react"; // Updated icons
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,8 +10,8 @@ export default function HomePage() {
       <header className="container mx-auto py-8 px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <ShieldCheck className="h-10 w-10 text-primary" />
-            <span className="text-3xl font-bold">QuestLog</span>
+            <AppWindow className="h-10 w-10 text-primary" />
+            <span className="text-3xl font-bold">DevTrack</span>
           </Link>
           <nav className="space-x-4">
             <Button variant="ghost" asChild>
@@ -28,14 +28,14 @@ export default function HomePage() {
         <section className="py-16 md:py-24 lg:py-32 bg-background">
           <div className="container mx-auto px-4 md:px-6 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Turn Your Tasks into Epic <span className="text-primary">Quests!</span>
+              Streamline Your Software <span className="text-primary">Development Workflow!</span>
             </h1>
             <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-              QuestLog transforms your mundane to-do list into an exciting adventure. Generate quests with AI, track your progress, and conquer your goals like a true hero.
+              DevTrack helps your team manage tasks efficiently. Generate tasks with AI, track progress, and deliver projects successfully.
             </p>
             <div className="mt-10 flex justify-center space-x-4">
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="/quests">Start Your Adventure</Link>
+                <Link href="/tasks">Get Started with Tasks</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="#features">Learn More</Link>
@@ -47,23 +47,23 @@ export default function HomePage() {
         <section id="features" className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Features to Aid Your Journey
+              Tools for Efficient Development
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <FeatureCard
-                icon={<Zap className="h-10 w-10 text-accent" />}
-                title="AI-Powered Quest Generation"
-                description="Let our AI craft engaging and thematic quests based on your tasks. Never face a boring to-do again!"
+                icon={<Sparkles className="h-10 w-10 text-accent" />}
+                title="AI-Assisted Task Creation"
+                description="Let our AI help draft clear and actionable tasks based on your project needs. Speed up your planning phase!"
               />
               <FeatureCard
-                icon={<ListChecks className="h-10 w-10 text-primary" />}
-                title="Dynamic Quest Management"
-                description="View, complete, edit, and delete quests with ease. Your adventure, your rules."
+                icon={<ClipboardList className="h-10 w-10 text-primary" />}
+                title="Efficient Task Management"
+                description="View, update, assign, and complete tasks with an intuitive interface. Keep your projects on track."
               />
               <FeatureCard
-                icon={<Brain className="h-10 w-10 text-secondary" />}
-                title="Local Storage Persistence"
-                description="Your quests are saved directly in your browser. No account needed to get started quickly."
+                icon={<Database className="h-10 w-10 text-secondary" />}
+                title="Browser-Based Storage"
+                description="Your tasks are saved directly in your browser for quick access. No account needed to get started."
               />
             </div>
           </div>
@@ -74,20 +74,20 @@ export default function HomePage() {
              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="md:w-1/2">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                        Visualize Your Victories
+                        Track Your Progress Clearly
                     </h2>
                     <p className="text-lg text-muted-foreground mb-8">
-                        QuestLog provides a visually appealing interface with quest cards, thematic icons, and satisfying completion states to make productivity feel rewarding.
+                        DevTrack provides a clean and organized interface with task cards, status indicators, and progress summaries to keep your development cycle transparent.
                     </p>
                     <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                        <Link href="/auth/signup">Join the Guild</Link>
+                        <Link href="/auth/signup">Sign Up Now</Link>
                     </Button>
                 </div>
                 <div className="md:w-1/2">
                     <Image 
                         src="https://placehold.co/600x400.png" 
-                        alt="QuestLog Interface Preview"
-                        data-ai-hint="fantasy rpg interface"
+                        alt="DevTrack Interface Preview"
+                        data-ai-hint="software project dashboard"
                         width={600} 
                         height={400} 
                         className="rounded-lg shadow-2xl"
@@ -100,7 +100,7 @@ export default function HomePage() {
 
       <footer className="py-8 bg-card border-t">
         <div className="container mx-auto px-4 md:px-6 text-center text-muted-foreground">
-          &copy; {new Date().getFullYear()} QuestLog. All rights reserved. Unleash your potential!
+          &copy; {new Date().getFullYear()} DevTrack. All rights reserved. Code. Collaborate. Conquer.
         </div>
       </footer>
     </div>

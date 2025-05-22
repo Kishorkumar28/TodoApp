@@ -1,7 +1,8 @@
+
 "use client";
 
 import Link from 'next/link';
-import { ShieldCheck, UserCircle, LogOut, Settings, Menu } from 'lucide-react';
+import { AppWindow, UserCircle, LogOut, Settings, Menu } from 'lucide-react'; // Updated AppWindow
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -31,7 +32,7 @@ export function Navbar() {
             </Button>
           )}
           <Link href="/" className="flex items-center space-x-2">
-            <ShieldCheck className="h-8 w-8 text-primary" />
+            <AppWindow className="h-8 w-8 text-primary" />
             <span className="font-bold text-xl whitespace-nowrap">{siteConfig.name}</span>
           </Link>
         </div>
@@ -54,9 +55,9 @@ export function Navbar() {
               <DropdownMenuContent className="w-56" align="end" forceMount>
                 <DropdownMenuLabel className="font-normal">
                   <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">Player One</p>
+                    <p className="text-sm font-medium leading-none">Developer One</p>
                     <p className="text-xs leading-none text-muted-foreground">
-                      player.one@example.com
+                      dev.one@example.com
                     </p>
                   </div>
                 </DropdownMenuLabel>

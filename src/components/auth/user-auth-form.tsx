@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -39,9 +40,9 @@ export function UserAuthForm({ className, isSignUp = false, ...props }: UserAuth
 
     toast({
       title: isSignUp ? "Account Created!" : "Logged In!",
-      description: isSignUp ? "Welcome to QuestLog, adventurer!" : "Welcome back to QuestLog!",
+      description: isSignUp ? "Welcome to DevTrack, developer!" : "Welcome back to DevTrack!", // Updated text
     });
-    // Redirect to dashboard/quests page after "login/signup"
+    // Redirect to dashboard/tasks page after "login/signup"
     router.push("/dashboard"); 
   }
 
