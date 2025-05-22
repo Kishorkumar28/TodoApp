@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AppWindow, Sparkles, Database, ClipboardList } from "lucide-react"; // Updated icons
@@ -71,8 +72,8 @@ export default function HomePage() {
         
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
-             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                <div className="md:w-1/2">
+             <div className="flex flex-col items-center justify-center gap-8 text-center">
+                <div className="">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         Track Your Progress Clearly
                     </h2>
@@ -80,18 +81,8 @@ export default function HomePage() {
                         DevTrack provides a clean and organized interface with task cards, status indicators, and progress summaries to keep your development cycle transparent.
                     </p>
                     <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                        <Link href="/auth/signup">Sign Up Now</Link>
+                        <Link href="/auth/signup"><span>Sign Up Now</span></Link>
                     </Button>
-                </div>
-                <div className="md:w-1/2">
-                    <Image 
-                        src="https://placehold.co/600x400.png" 
-                        alt="DevTrack Interface Preview"
-                        data-ai-hint="software project dashboard"
-                        width={600} 
-                        height={400} 
-                        className="rounded-lg shadow-2xl"
-                    />
                 </div>
             </div>
           </div>
