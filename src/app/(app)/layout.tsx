@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Navbar } from '@/components/layout/navbar';
@@ -29,8 +30,10 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         <SidebarFooter>
           <Button variant="ghost" className="w-full justify-start" asChild>
             <Link href="/auth/login">
-              <LogOut className="mr-2 h-4 w-4" />
-              Logout
+              <span className="flex items-center">
+                <LogOut className="mr-2 h-4 w-4" />
+                Logout
+              </span>
             </Link>
           </Button>
         </SidebarFooter>
